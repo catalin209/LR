@@ -1,0 +1,6 @@
+﻿S>SaT
+S>T
+T>TbF
+T>F
+F>c
+F>wSe
