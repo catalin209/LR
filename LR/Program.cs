@@ -9,6 +9,7 @@ namespace LR
     class Graf
     {
         public int s;
+        public int verif;
         public int pozi;
         public List<string> Lista_noduri = new List<string>();
         public string pleaca;//de unde a provenit
@@ -41,7 +42,7 @@ namespace LR
 
         public static string first(string item, int key = 0, string result = "", bool p_f = false)
         {
-            if (p_f == false)
+            if (p_f == true)
             {
                 for (int i = 0; i < parcurs.Count; i++)
                 {
