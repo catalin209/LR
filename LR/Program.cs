@@ -56,7 +56,8 @@ namespace LR
             string result3 = string.Empty;
             foreach (var i in result2)
             {
-                result3 += "r" + i.ToString();
+                result3 += "r" + "4" + i.ToString();
+                var t = 9;
             }
 
             result = result3;
