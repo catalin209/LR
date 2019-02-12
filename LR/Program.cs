@@ -50,7 +50,7 @@ namespace LR
                 }
             }
 
-          
+            return null;
 
             var result2 = result.Replace("&", "").Distinct();
             string result3 = string.Empty;
