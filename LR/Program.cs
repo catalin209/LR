@@ -50,24 +50,7 @@ namespace LR
                 }
             }
 
-            if (char.IsUpper(item[0]))
-            {
-                var elements = Dictionary_Grammer.Where(elem => elem.Value[0].ToString().Equals(item[0].ToString()) && elem.Key.Equals(key) == false);
-                foreach (var i in elements)
-                {
-                    var poz = Grammer.IndexOf(Grammer.Where(elem => elem.Equals(i.Value)).FirstOrDefault());
-                    if (parcurs_first[poz] == false)
-                    {
-                        parcurs_first[poz] = true;
-                        result += "/" + first(i.Value.Split('>')[1], i.Key, "", true);
-                    }
-
-                }
-            }
-            else
-            {
-                result = "/" + item[0].ToString();
-            }
+          
 
             var result2 = result.Replace("/", "").Distinct();
             string result3 = string.Empty;
