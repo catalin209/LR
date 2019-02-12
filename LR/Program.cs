@@ -8,7 +8,8 @@ namespace LR
 {
     class Graf
     {
-        public int poz;
+        public int s;
+        public int pozi;
         public List<string> Lista_noduri = new List<string>();
         public string pleaca;//de unde a provenit
         public int nivel { get; set; }
@@ -228,7 +229,7 @@ namespace LR
                 if (Graf_List[i].pleaca != null && Graf_List[i].pleaca.All(char.IsLower))
                 {
                     Analyze_Table a_n = new Analyze_Table();
-                    a_n.linie = Graf_List[i].poz;
+                    a_n.linie = Graf_List[i].pozi;
                     a_n.coloana = Graf_List[i].pleaca;
                     a_n.value = "s" + i;
                     AnalyzeList.Add(a_n);
@@ -236,7 +237,7 @@ namespace LR
                 else if (Graf_List[i].pleaca != null && Graf_List[i].pleaca.All(char.IsUpper))
                 {
                     Analyze_Table a_n = new Analyze_Table();
-                    a_n.linie = Graf_List[i].poz;
+                    a_n.linie = Graf_List[i].pozi;
                     a_n.coloana = Graf_List[i].pleaca;
                     a_n.value = i.ToString();
                     AnalyzeList.Add(a_n);
@@ -475,7 +476,7 @@ namespace LR
 
                                 Create_I0(move, g, 0);
                                 g.nivel = contor_global;
-                                g.poz = i;
+                                g.pozi = i;
                                 var exist = copy.Any(elem => elem.Lista_noduri.ElementAt(0).Equals(move));
                                 if (exist == false && item.Value.Count == 1)
                                 {
@@ -514,7 +515,7 @@ namespace LR
 
                             var gg = new Graf();
                             gg.nivel = aux_list.ElementAt(0).nivel;
-                            gg.poz = aux_list.ElementAt(0).poz;
+                            gg.pozi = aux_list.ElementAt(0).pozi;
                             gg.pleaca = aux_list.ElementAt(0).pleaca;
                             foreach (var item2 in aux_list)
                             {
