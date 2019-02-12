@@ -52,11 +52,11 @@ namespace LR
 
           
 
-            var result2 = result.Replace("/", "").Distinct();
+            var result2 = result.Replace("&", "").Distinct();
             string result3 = string.Empty;
             foreach (var i in result2)
             {
-                result3 += "/" + i.ToString();
+                result3 += "r" + i.ToString();
             }
 
             result = result3;
