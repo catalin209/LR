@@ -14,6 +14,7 @@ namespace LR
         public List<string> Lista_noduri = new List<string>();
         public string pleaca;//de unde a provenit
         public int nivel { get; set; }
+	int q;
     }
 
     class Analyze_Table
