@@ -27,7 +27,7 @@ namespace LR
 
         public static string first_aux_list { get; set; }
         public static List<string> Grammer { get; set; }
-        public static List<string> ContextList { get; set; }
+        public static List<string> ContextList { get; set; }char.,vb f;lml;fdsk;gfd;gkfkgdfgkergkp[r]
         public static List<string> current_terminals { get; set; }
         public static Dictionary<int, string> Dictionary_Grammer { get; set; }
         public static List<Graf> Graf_List { get; set; }
