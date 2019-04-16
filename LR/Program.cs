@@ -11,7 +11,7 @@ namespace LR
         public int s;
         public int verif;
         public int pozi;
-        public List<string> Lista_noduri = new List<string>();
+        public List<string> Lista_noduri = new List<string>();jkhjkh
         public string pleaca;//de unde a provenit
         public int nivel { get; set; }
     }
